@@ -1,26 +1,34 @@
 .container{
+    display: grid;
     height: 100%;
-    display:grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: 150px calc(100vh - 250px) 100px;
-    grid-template-areas:
-    "header header"
-    "main slidebar"
-    "footer footer";
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px 25px calc(100vh - 225px) 150px;
+    grid-template-areas:"one one two two two"
+                        "three three three three three"
+                        "four five five five five"
+                        "four six six six six";
 }
-.header{
-    grid-area: header;
-    background-color: aquamarine;
+.one{
+    grid-area: one;
+    background-color: yellow;
 }
-.main{
-    grid-area: main;
-    background-color: black;
+.two{
+    grid-area: two;
+    background-color:cyan;
 }
-.slidebar{
-    grid-area: slidebar;
-    background-color: blueviolet;
+.three{
+    grid-area: three;
+    background-color: green;
 }
-.footer{
-    grid-area: footer;
-    background-color: gray;
+.four{
+    grid-area: four;
+    background-color: brown;
+}
+.five{
+    grid-area: five;
+    background-color: blue;
+}
+.six{
+    grid-area: six;
+    background-color: violet;
 }
