@@ -1,20 +1,13 @@
-.container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: 50vh;
-    justify-content: center;
+.div-juldyz{
+    display: inline-block;
+    position:relative;
 }
-.container > div{
-    height: 100%;
-    width: 300px;
-}
-.div1{
-    background-color: yellow;
-}
-.div2{
-    background-color:cyan;
-}
-.div3{
-    background-color: antiquewhite;
+.title-juldyz{
+    position: absolute;
+    color: blanchedalmond;
+    bottom: -250px;
+    left: 5px;
+    right: 5px;
+    text-align: center;
+    font-size: 30px;
 }
