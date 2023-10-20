@@ -1,34 +1,20 @@
 .container{
-    display: grid;
-    height: 100%;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 50px 25px calc(100vh - 225px) 150px;
-    grid-template-areas:"one one two two two"
-                        "three three three three three"
-                        "four five five five five"
-                        "four six six six six";
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 50vh;
+    justify-content: center;
 }
-.one{
-    grid-area: one;
+.container > div{
+    height: 100%;
+    width: 300px;
+}
+.div1{
     background-color: yellow;
 }
-.two{
-    grid-area: two;
+.div2{
     background-color:cyan;
 }
-.three{
-    grid-area: three;
-    background-color: green;
-}
-.four{
-    grid-area: four;
-    background-color: brown;
-}
-.five{
-    grid-area: five;
-    background-color: blue;
-}
-.six{
-    grid-area: six;
-    background-color: violet;
+.div3{
+    background-color: antiquewhite;
 }
