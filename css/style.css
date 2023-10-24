@@ -1,8 +1,8 @@
 :root{
     --el-main-color:#00a9ff;
     --el-secondary-color:#89cff3;
-    --el-link-color:#00a9ff;
-    --el-link-hover-color:#00a9ff;
+    --el-link-color:#89cff3;
+    --el-link-hover-color:#89cff350;
     --el-background-color:#cdf5fd;
 }
 body{
