@@ -8,6 +8,7 @@
 }
 a{
   text-decoration: none;
+  color: #000000;
 }
 body {
   height: 5000px;
@@ -62,12 +63,19 @@ header {
   margin-top: 70px;
   height: 60px;
   align-items: center;
-  display: flex;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 8fr;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 8fr;
+  grid-template-areas: "whiteBg titleNavi titleNavi titleNavi titleNavi titleNavi whiteBg";
+}
+.whiteBg{
+  grid-area: whiteBg;
+  height: 60px;
+  background-color: white;
 }
 .titleNavi{
   font-size: 20px;
-  margin: 0 20px;
+  padding: 18px 0;
+  text-align: center;
   color: #000000;
 }
 .home-icon{
@@ -75,9 +83,11 @@ header {
 }
 .navi .titleNavi:hover{
   border-bottom: 2px solid red;
+  background-color: #00000020;
 }
 .navi .titleNavi:focus{
-  border: 2px solid red;
+  border-bottom: 2px solid red;
+  background-color: #00000020;
 }
 main {
   background-color: #f5f5f5;
